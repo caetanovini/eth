@@ -6,5 +6,10 @@ sources:
     schema: eth_schema
     tables:
       - name: contracts
+      - name: contracts_clone
       - name: token_transfers
       - name: transactions
+        columns:
+          - name: hash
+            data_tests:
+              - unique
